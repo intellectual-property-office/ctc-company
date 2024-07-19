@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IPO.Common.API" Version="0.7.283922" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IPO.Company.Interfaces\IPO.Company.Interfaces.csproj" />
+    <ProjectReference Include="..\IPO.Company.Models\IPO.Company.Models.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IPO.Common.API" Version="0.7.283922" />
+    <PackageReference Include="IPO.Configuration" Version="0.2.259101" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IPO.Company.Gateways\IPO.Company.Gateways.csproj" />
+    <ProjectReference Include="..\IPO.Company.Interfaces\IPO.Company.Interfaces.csproj" />
+    <ProjectReference Include="..\IPO.Company.Models\IPO.Company.Models.csproj" />
+    <ProjectReference Include="..\IPO.Company.Services\IPO.Company.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="version">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
